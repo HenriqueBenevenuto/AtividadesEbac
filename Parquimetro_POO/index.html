@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Parquímetro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simulador de Parquímetro</h1>
+
+        <label for="valorPago">Digite o valor pago (R$):</label>
+        <input type="number" id="valorPago" placeholder="Ex: 2.5" step="0.01" min="0">
+
+        <button id="btnCalcular">Calcular Tempo e Troco</button>
+
+        <div id="resultado">
+            <p><strong>Tempo de Permanência:</strong> <span id="tempo"></span></p>
+            <p><strong>Troco:</strong> R$ <span id="troco"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
