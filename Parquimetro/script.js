@@ -1,4 +1,3 @@
-
 class Tarifa {
     constructor(valor, minutos) {
         this.valor = valor;
@@ -58,10 +57,21 @@ botao.addEventListener("click", () => {
         return;
     }
 
-    // Calcular tempo e troco
+    // Verifica se o valor é inferior à tarifa mínima
+    const tarifaMinima = 1;  // Menor tarifa disponível
+    if (valor < tarifaMinima) {
+        spanTempo.textContent = "Valor insuficiente!";
+        spanTempo.classList.add("insuficiente");
+        spanTroco.textContent = valor.toFixed(2);
+        return;
+    } else {
+        spanTempo.classList.remove("insuficiente");
+    }
+
+    // Calcular tempo e troco normalmente
     const resultado = parquimetro.calcular(valor);
 
-    // Exibe o resultado
     spanTempo.textContent = resultado.tempoFormatado;
     spanTroco.textContent = resultado.troco;
 });
+

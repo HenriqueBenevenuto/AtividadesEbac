@@ -77,3 +77,12 @@ button:hover {
     font-weight: bold;
     font-size: 20px;
 }
+
+.insuficiente {
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
