@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Overlay escuro */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#aviso {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+#aviso h2 {
+    margin-bottom: 10px;
+}
+
+#aviso ul {
+    text-align: left;
+    margin: 10px 0 20px 0;
+}
+
+/* Botões de dificuldade com cores distintas */
+#aviso button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botões de dificuldade com classes */
+#aviso button.facil {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#aviso button.facil:hover {
+    background-color: #45a049;
+}
+
+#aviso button.medio {
+    background-color: #FFA500;
+    color: white;
+}
+
+#aviso button.medio:hover {
+    background-color: #e69500;
+}
+
+#aviso button.dificil {
+    background-color: #FF6347;
+    color: white;
+}
+
+#aviso button.dificil:hover {
+    background-color: #e04b3c;
+}
+
+
+/* Conteúdo principal */
+main {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#tentativas {
+    margin-top: 5px;
+    color: #555;
+}
